@@ -1,4 +1,4 @@
-import "./featuredDorms.css";
+import "./FeaturedDorms.css";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 const dorms = [
