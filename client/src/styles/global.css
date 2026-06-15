@@ -1,0 +1,48 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #0f172a;
+  line-height: 1.6;
+}
+
+/* APP WRAPPER */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* TYPOGRAPHY */
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #0f172a;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #475569;
+  margin-top: 10px;
+}
+
+/* OPTIONAL LINK STYLE */
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
