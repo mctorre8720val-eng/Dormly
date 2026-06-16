@@ -1,0 +1,56 @@
+.dorms-page {
+    padding-top: 2rem;
+}
+
+
+.dorms-header {
+    text-align: center;
+}
+
+
+/* SEARCH */
+
+.search-wrapper {
+    position: relative;
+    width: 450px;
+    margin: 2rem auto;
+}
+
+
+.search-wrapper input {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+
+    border-radius: 10px;
+    border: 1px solid #ccc;
+
+    font-size: 16px;
+    outline: none;
+}
+
+
+.search-wrapper input:focus {
+    border-color: #2563eb;
+}
+
+
+.search-icon {
+    position: absolute;
+
+    left: 14px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #888;
+}
+
+
+
+@media (max-width: 700px){
+
+    .search-wrapper {
+        width: 90%;
+    }
+
+}

@@ -1,0 +1,128 @@
+.dorm-list-section {
+    padding: 3rem 12rem;
+}
+
+
+.dorm-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+
+/* CARD */
+
+.dorm-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+
+.dorm-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+
+
+/* IMAGE */
+
+.dorm-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+
+/* INFO */
+
+.dorm-info {
+    padding: 1.3rem;
+}
+
+
+.dorm-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #0f172a;
+}
+
+
+
+/* LOCATION */
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #64748b;
+    margin-bottom: 1rem;
+}
+
+
+.location svg {
+    color: #2563eb;
+}
+
+
+
+/* BOTTOM */
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+
+.bottom span:first-child {
+    color: #f59e0b;
+}
+
+
+.bottom span:last-child {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+
+
+/* BUTTON */
+
+.dorm-card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+
+    background: #2563eb;
+    color: white;
+
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+.dorm-card button:hover {
+    background: #1d4ed8;
+}
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .dorm-list-section {
+        padding: 2rem;
+    }
+
+    .dorm-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

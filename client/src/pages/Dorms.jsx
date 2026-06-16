@@ -1,54 +1,59 @@
-import FeaturedDorms from "../components/FeaturedDorms";
 import Welcome from "../components/Welcome";
+import Subheader from "../components/Subheader";
+import DormList from "../components/DormList";
+import FeaturedDorms from "../components/FeaturedDorms";
 import { FaSearch } from "react-icons/fa";
+import "./Dorms.css";
 
 function Dorms() {
     return (
-        <div>
+        <div className="dorms-page">
 
-            {/* WELCOME (directly under navbar) */}
-            <div style={{paddingTop: "2rem", textAlign: "center" }}>
-            <Welcome
-                welcomeTitle={<>Browse <span style={{ color: "#2563eb" }}>Dormly</span></>}
-                welcomeSubtitle="Find the perfect dorm for your needs and budget"
-            />
+            {/* WELCOME */}
+            <div className="dorms-header">
+                <Welcome
+                    welcomeTitle={
+                        <>
+                            Browse <span style={{ color: "#2563eb" }}>Dormly</span>
+                        </>
+                    }
+                    welcomeSubtitle="Find the perfect dorm for your needs and budget"
+                />
             </div>
 
-            {/* SEARCH BAR (below welcome) */}
-            <div style={{
-                paddingLeft: "12rem",
-                marginTop: "2rem"
-            }}>
-                <div style={{ position: "relative", width: "fit-content"}}>
 
-                    <FaSearch style={{
-                        position: "absolute",
-                        top: "50%",
-                        left: "12px",
-                        transform: "translateY(-50%)",
-                        color: "#888"
-                    }} />
+            {/* SEARCH BAR */}
+            <div className="search-wrapper">
 
-                    <input
-                        type="text"
-                        placeholder="Search dorms (e.g. Katipunan, UP, budget...)"
-                        style={{
-                            width: "450px",
-                            padding: "12px 15px 12px 38px",
-                            borderRadius: "8px",
-                            border: "1px solid #ccc",
-                            outline: "none",
-                            fontSize: "16px",
-                        }}
-                    />
-                </div>
+                <FaSearch className="search-icon" />
+
+                <input
+                    type="text"
+                    placeholder="Search dorms (e.g. Katipunan, UP, budget...)"
+                />
+
             </div>
 
-            {/* FEATURED DORMS */}
-            <FeaturedDorms
-                title="All Dorms"
-                subtitle="Browse our complete list of dormitories"
-            />
+            <div className="featured">
+                <Subheader
+                Header = "Featured Dorms"
+                Subheader = "Top picks near you"
+                >
+                
+                </Subheader>
+            <FeaturedDorms />
+            </div>
+
+
+            <div className="featured">
+                <Subheader
+                Header = "Dorm List"
+                Subheader = "Check for more information"
+                >
+                
+                </Subheader>
+            <DormList />
+            </div>
 
         </div>
     );
