@@ -31,11 +31,11 @@ const dorms = [
   },
 ];
 
-function FeaturedDorms() {
+function FeaturedDorms({title, subtitle}) {
   return (
     <section className="featured-section">
-      <h2>Featured Dorms</h2>
-      <p>Top picks near you</p>
+      <h2>{title}</h2>
+      <p>{subtitle}</p>
 
       <div className="dorm-grid">
         {dorms.map((dorm) => (

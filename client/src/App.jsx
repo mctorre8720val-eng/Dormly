@@ -1,17 +1,20 @@
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import FeaturedDorms from "./components/FeaturedDorms";
-import About from "./components/About";
+import Home from "./pages/Home";
+import Dorms from "./pages/Dorms";
+import Welcome from "./components/Welcome";
 
 function App() {
-  return (
+  return(
     <>
-      <Navbar />
-      <Hero />
-      <FeaturedDorms />
-      <About />
+    <Navbar />
+
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/dorms" element={<Dorms />} />
+    </Routes>
     </>
-  );
+  )
 }
 
 export default App;
