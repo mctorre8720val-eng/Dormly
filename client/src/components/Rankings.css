@@ -81,12 +81,63 @@
 
 @media(max-width:768px){
 
-.rankings{
- padding:3rem 1.5rem;
+  .rankings{
+    padding:3rem 1.5rem;
+  }
+
+
+  .ranking-card{
+    gap:1rem;
+  }
+
 }
 
-.ranking-card{
- gap:1rem;
-}
+
+/* iPhone 13 / small phones */
+@media(max-width:430px){
+
+  .rankings {
+    padding: 2.5rem 1rem;
+  }
+
+
+  .ranking-header h2 {
+    font-size: 1.8rem;
+  }
+
+
+  .ranking-header p {
+    font-size: .9rem;
+  }
+
+
+  .ranking-list {
+    width: 100%;
+  }
+
+
+  .ranking-card {
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 1.2rem;
+    border-radius: 14px;
+  }
+
+
+  .rank-number {
+    font-size: 1.8rem;
+    width: auto;
+  }
+
+
+  .rank-info h3 {
+    font-size: 1.1rem;
+  }
+
+
+  .rating {
+    font-size: .9rem;
+  }
 
 }
