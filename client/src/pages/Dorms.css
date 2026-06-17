@@ -47,10 +47,40 @@
 
 
 
-@media (max-width: 700px){
+/* iPhone 13 / small phones */
+@media (max-width: 430px) {
+
+    .dorms-page {
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+
+    .dorms-header h1 {
+        font-size: 1.8rem;
+    }
+
+
+    .dorms-header p {
+        font-size: 0.95rem;
+    }
+
 
     .search-wrapper {
-        width: 90%;
+        width: 100%;
+        margin: 1.5rem auto;
+    }
+
+
+    .search-wrapper input {
+        padding: 12px 12px 12px 38px;
+        font-size: 15px;
+    }
+
+
+    .search-icon {
+        left: 12px;
     }
 
 }

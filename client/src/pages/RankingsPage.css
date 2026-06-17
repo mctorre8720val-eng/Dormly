@@ -57,3 +57,56 @@
   color: #111827;
   font-weight: bold;
 }
+
+
+/* iPhone 13 / mobile */
+@media (max-width: 430px) {
+
+  .rankings-page {
+    padding: 90px 1rem;
+  }
+
+
+  .rankings-page h1 {
+    font-size: 2rem;
+  }
+
+
+  .subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+
+
+  .full-ranking-list {
+    width: 100%;
+    gap: 1rem;
+  }
+
+
+  .full-ranking-card {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 1rem;
+    padding: 1.2rem;
+
+    border-radius: 16px;
+  }
+
+
+  .rank {
+    font-size: 2rem;
+  }
+
+
+  .full-ranking-card h2 {
+    font-size: 1.2rem;
+  }
+
+
+  .rating {
+    font-size: 0.9rem;
+  }
+
+}
