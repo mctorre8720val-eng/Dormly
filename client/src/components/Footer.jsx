@@ -33,7 +33,13 @@ function Footer() {
         <div className="footer-contact">
           <h3>Contact</h3>
           <p>📍 Philippines</p>
-          <p>✉ dormly@email.com</p>
+
+          <a 
+            href="mailto:dormly@email.com"
+          >
+            ✉ dormly@email.com
+          </a>
+
         </div>
 
       </div>
