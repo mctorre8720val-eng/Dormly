@@ -34,9 +34,7 @@ function Footer() {
           <h3>Contact</h3>
           <p>📍 Philippines</p>
 
-          <a 
-            href="mailto:dormly@email.com"
-          >
+          <a href="https://michaelportfolio-iota.vercel.app/"> 
             ✉ dormly@email.com
           </a>
 
