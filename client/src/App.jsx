@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Dorms from "./pages/Dorms";
 import About from "./components/About";
+import Rankings from "./pages/Rankings"
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/dorms" element={<Dorms />} />
         <Route path="/About" element={<About />} />
+        <Route path="/Rankings" element={<Rankings />}/>
       </Routes>
     </>
   )

@@ -1,6 +1,7 @@
 import Welcome from "../components/Welcome";
 import Subheader from "../components/Subheader";
 import DormList from "../components/DormList";
+import Footer from "../components/Footer";
 import FeaturedDorms from "../components/FeaturedDorms";
 import { FaSearch } from "react-icons/fa";
 import "./Dorms.css";
@@ -54,7 +55,7 @@ function Dorms() {
                 </Subheader>
             <DormList />
             </div>
-
+            <Footer />
         </div>
     );
 }

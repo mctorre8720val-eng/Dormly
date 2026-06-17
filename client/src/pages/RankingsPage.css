@@ -1,0 +1,59 @@
+ .rankings-page {
+  padding: 120px 8rem;
+}
+
+
+.rankings-page h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+
+.subtitle {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 3rem;
+}
+
+
+.full-ranking-list {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+
+.full-ranking-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  background: white;
+  padding: 2rem;
+
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+
+.rank {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2563eb;
+}
+
+
+.rating {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  color: #f59e0b;
+}
+
+
+.rating span {
+  color: #111827;
+  font-weight: bold;
+}
